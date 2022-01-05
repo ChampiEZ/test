@@ -1,0 +1,94 @@
+header {
+    min-height: 100vh;
+    background-image: url('../img/fond.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 0;
+
+    > div {
+        @include sectionpadding;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+        &__desc {
+            font-family: $font-text;
+            color: white;
+            width: 70%;
+
+            h1 {
+                font-size: 65px;
+                font-weight: bold;
+                line-height: 78px;
+                font-family: $font-title;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                width: 65%;
+                text-align: left;
+            }
+
+            div {
+                height: 5px;
+                width: 72px;
+                background-color: white;
+                margin-top: 94px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            width: 30%;
+
+            img {
+                width: 80%;
+            }
+        }
+
+    }
+
+    .buttons {
+        padding: 0 36px;
+        margin-top: 194px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: $font-title;
+            font-size: 24px;
+
+            .testImg{
+                display: flex;
+                background-image: url('../img/bouton.png');
+                background-size: cover;
+                height: 146px;
+                width: 382px;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 0.5px;
+                color: #fff;
+                font-weight: 700;
+
+                .circ{
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    border-radius: 100%;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
